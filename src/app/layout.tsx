@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import localFont from "next/font/local";
+
+const satoshi = localFont({
+  src: [
+    {
+      path: "../../public/Satoshi-Variable.ttf",
+    },
+  ],
+  variable: "--font-satoshi",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +24,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className=""
+    >
+      <head></head>
+      <style>
+        {`
+          :root {
+            --font-satoshi: ${satoshi.variable};
+          }
+
+          .font-satoshi {
+            font-family: ${satoshi.style.fontFamily.replaceAll("'", "")};
+          }
+        `}
+      </style>
+      <body className={`${satoshi.className} min-h-screen text-gray bg-gradient-to-br from-bg-primary to-bg-secondary`}>{children}</body>
     </html>
   );
 }
