@@ -1,5 +1,8 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import DotPattern from "@/components/dot-pattern";
+import details from "@/utils/details.json";
 
 export default function Home() {
   return (
@@ -9,31 +12,33 @@ export default function Home() {
           <span>Pranith</span>
           <span>Molakalapalli</span>
           <div
-            className={`font-gopher flex w-full justify-between pt-10 text-5xl tracking-wide`}
+            className={`font-gopher flex w-full justify-between pt-4 text-5xl tracking-wide`}
           >
-            {/* <span>18</span>
-            <span>Full-Stack</span>
-            <span>Arizona</span> */}
+            {details.detail.map((item: String, i: any) => (
+              <span className="font-thin italic" key={i}>
+                {item}
+              </span>
+            ))}
           </div>
         </div>
         <DotPattern
           width={20}
           height={20}
-          cx={1}
-          cy={1}
+          cx={2}
+          cy={2}
           cr={1}
           className={cn(
-            "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] ",
+            "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] "
           )}
         />
         <DotPattern
           width={20}
           height={20}
-          cx={1}
-          cy={1}
+          cx={2}
+          cy={2}
           cr={1}
           className={cn(
-            "[mask-image:linear-gradient(to_top_left,white,transparent,transparent)] ",
+            "[mask-image:linear-gradient(to_top_left,white,transparent,transparent)] "
           )}
         />
       </div>

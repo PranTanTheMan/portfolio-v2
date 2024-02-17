@@ -26,8 +26,27 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@keyframes wave {
+  0% {
+    opacity: 0.5;
   }
+  20% {
+    opacity: 0.6;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.dot-animation {
+  animation: wave 1s ease-in-out infinite alternate;
 }

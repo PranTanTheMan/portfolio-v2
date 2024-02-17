@@ -30,7 +30,7 @@ export function DotPattern({
       aria-hidden="true"
       className={cn(
         "pointer-events-none absolute inset-0 h-full w-full fill-neutral-400/80",
-        className,
+        className
       )}
       {...props}
     >
@@ -44,7 +44,13 @@ export function DotPattern({
           x={x}
           y={y}
         >
-          <circle id="pattern-circle" cx={cy} cy={cy} r={cr} />
+          <circle
+            id="pattern-circle"
+            cx={cy}
+            cy={cy}
+            r={cr}
+            className="dot-animation"
+          />
         </pattern>
       </defs>
       <rect width="100%" height="100%" strokeWidth={0} fill={`url(#${id})`} />

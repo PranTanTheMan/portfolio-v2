@@ -32,6 +32,7 @@ const config: Config = {
             transform: "translateZ(0) rotate(360deg)",
           },
         },
+
         slide: {
           to: {
             transform: "translate(calc(100cqw - 100%), 0)",

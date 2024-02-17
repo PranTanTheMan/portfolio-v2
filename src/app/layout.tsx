@@ -24,6 +24,31 @@ const gopher = localFont({
   src: [
     {
       path: "../../public/Fonts/Gopher/Gopher-Regular.ttf",
+      weight: "normal",
+    },
+    {
+      path: "../../public/Fonts/Gopher/Gopher-Bold.ttf",
+      weight: "600",
+    },
+    {
+      path: "../../public/Fonts/Gopher/Gopher-Italic.ttf",
+      weight: "700",
+      style: "italic",
+    },
+    {
+      path: "../../public/Fonts/Gopher/Gopher-BoldItalic.ttf",
+      weight: "800",
+      style: "Bolditalic",
+    },
+    {
+      path: "../../public/Fonts/Gopher/Gopher-HeavyItalic.ttf",
+      weight: "900",
+      style: "italic",
+    },
+    {
+      path: "../../public/Fonts/Gopher/Gopher-HairlineItalic.ttf",
+      weight: "100",
+      style: "italic",
     },
   ],
   variable: "--font-gopher",

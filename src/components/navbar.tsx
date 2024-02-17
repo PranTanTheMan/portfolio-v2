@@ -25,18 +25,18 @@ const GlassNavigation = () => {
 };
 
 const Links = () => (
-  <div className="hidden items-center gap-2 md:flex">
-    <GlassLink text="Home" />
-    <GlassLink text="About" />
-    <GlassLink text="Projects" />
-    <GlassLink text="Experience" />
+  <div className="hidden items-center gap-4 md:flex">
+    <GlassLink text="Home" href="/" />
+    <GlassLink text="About" href="#about" />
+    <GlassLink text="Projects" href="#projects" />
+    <GlassLink text="Experience" href="#experience" />
   </div>
 );
 
-const GlassLink = ({ text }: { text: string }) => {
+const GlassLink = ({ text, href }: { text: string; href: string }) => {
   return (
     <a
-      href="#"
+      href={href}
       className="group relative scale-100 overflow-hidden rounded-lg px-4 py-2 transition-transform hover:scale-105 active:scale-95"
     >
       <span className="relative z-10 text-white/90 transition-colors group-hover:text-white">
