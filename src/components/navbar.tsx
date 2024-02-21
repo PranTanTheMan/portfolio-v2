@@ -12,9 +12,9 @@ const GlassNavigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="glass-nav fixed left-0 right-0 top-0 z-10 mx-auto max-w-4xl overflow-hidden border-[1px] border-white/10 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur md:left-6 md:right-6 md:top-6 md:rounded-2xl">
-      <div className="glass-nav flex items-center justify-between px-5  py-5">
-        <p className="font-black text-3xl">Pranith</p>
+    <nav className="z-50 backdrop-blur-md fixed left-0 right-0 top-0 mx-auto max-w-4xl overflow-hidden border-[1px] border-white/10 bg-gradient-to-br from-white/20 to-white/5 md:left-6 md:right-6 md:top-6 md:rounded-2xl">
+      <div className="flex  items-center justify-between px-5  py-5">
+        <p className="font-black text-3xl text-white">Pranith</p>
         <Links />
         <Buttons setMenuOpen={setMenuOpen} />
       </div>
@@ -25,7 +25,7 @@ const GlassNavigation = () => {
 };
 
 const Links = () => (
-  <div className="hidden items-center gap-4 md:flex">
+  <div className="font-gopher hidden items-center gap-4 md:flex">
     <GlassLink text="Home" href="/" />
     <GlassLink text="About" href="#about" />
     <GlassLink text="Projects" href="#projects" />
@@ -42,7 +42,7 @@ const GlassLink = ({ text, href }: { text: string; href: string }) => {
       <span className="relative z-10 text-white/90 transition-colors group-hover:text-white">
         {text}
       </span>
-      <span className="absolute inset-0 z-0 bg-gradient-to-br from-white/20 to-white/5 opacity-0 transition-opacity group-hover:opacity-100" />
+      <span className="absolute inset-0 z-0 bg-gradient-to-br from-white/10 to-white/[0.01] opacity-0 transition-opacity group-hover:opacity-100 " />
     </a>
   );
 };
@@ -62,7 +62,7 @@ const Buttons = ({
 }) => (
   <div className="flex items-center gap-4">
     <ShimmerButton className="shadow-xl">
-      <span className="whitespace-pre-wrap text-center font-medium leading-none tracking-tight text-white from-white to-slate-900/10 ">
+      <span className="font-gopher whitespace-pre-wrap text-center font-medium leading-none tracking-tight text-white from-white to-slate-900/50 ">
         Contact Me
       </span>
     </ShimmerButton>
@@ -85,11 +85,12 @@ const MobileMenu = ({ menuOpen }: { menuOpen: boolean }) => {
       }}
       className="block overflow-hidden md:hidden"
     >
-      <div className="flex items-center justify-between px-4 pb-4">
-        <div className="flex items-center gap-4">
-          <TextLink text="Products" />
-          <TextLink text="History" />
-          <TextLink text="Contact" />
+      <div className="font-gopher flex items-center justify-between px-5 pb-4">
+        <div className=" flex items-center gap-8">
+          <TextLink text="Home" />
+          <TextLink text="About" />
+          <TextLink text="Projects" />
+          <TextLink text="Experience" />
         </div>
       </div>
     </motion.div>
