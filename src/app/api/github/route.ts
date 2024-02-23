@@ -13,5 +13,6 @@ export async function GET() {
 
   const res = await fetch(url, headers);
   const data = await res.json();
+  console.log(data);
   return NextResponse.json(data);
 }
