@@ -68,6 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full bg-black">
       <head>
+        <link rel="shortcut icon" href="Pranith.ico" type="image/x-icon" />
         {/* @ts-ignore */}
         <style global={"true"}>
           {`
@@ -75,7 +76,6 @@ export default function RootLayout({
             --font-satoshi: ${satoshi.variable};
             --font-faktum: ${faktum.variable};
           }
-
           .font-satoshi {
             font-family: ${satoshi.style.fontFamily.replaceAll("'", "")};
           }
