@@ -5,6 +5,8 @@ import { GradientCard, GradientContainer } from "./gradient-cards";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Tooltip } from "@nextui-org/react";
+import Skills from "./skills";
+
 interface GithubActivity {
   author: {
     login: string;
@@ -72,7 +74,10 @@ export default function About() {
 
   return (
     <>
-      <div className="relative flex h-full w-full overflow-hidden rounded-lg md:shadow-2xl">
+      <div
+        id="about"
+        className="relative flex h-full w-full overflow-hidden rounded-lg md:shadow-2xl"
+      >
         <DotPattern
           width={20}
           height={20}
@@ -181,12 +186,30 @@ export default function About() {
             className="col-span-1 bg-white/10 backdrop-blur-[1px] rounded-xl overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffffff_0%,transparent_100%)]
 "
           >
-            <div></div>
+            <Skills />
           </GradientCard>
           <GradientCard
             className="col-span-2 bg-white/10 backdrop-blur-[1px] rounded-xl overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffffff_0%,transparent_100%)]
 "
-          ></GradientCard>
+          >
+            <p className="px-6 py-2 text-[40px] tracking-normal leading-tight text-white font-satoshi font-bold ">
+              First and foremost, I am a{" "}
+              <a href="/biryani" className="text-[#EBB1B1]">
+                Biryani Enthusiast.{" "}
+              </a>
+              Otherwise, I specialize in creating Full-Stack web applications
+              using{" "}
+              <span className="text-white/40">
+                Next.js, Tailwind, Typescript, and Supabase.{" "}
+              </span>
+              <span>
+                I always look forward to finding ways on having{" "}
+                <span className="text-white/40">impact</span>,{" "}
+                <span className="text-white/40">fun</span>, and{" "}
+                <span className="text-white/40">learning new things</span>.
+              </span>
+            </p>
+          </GradientCard>
         </GradientContainer>
       </div>
     </>
