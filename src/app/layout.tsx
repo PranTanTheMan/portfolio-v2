@@ -43,7 +43,6 @@ const gopher = localFont({
     {
       path: "../../public/Fonts/Gopher/Gopher-HeavyItalic.ttf",
       weight: "900",
-      style: "italic",
     },
     {
       path: "../../public/Fonts/Gopher/Gopher-HairlineItalic.ttf",
@@ -90,7 +89,7 @@ export default function RootLayout({
         `}
         </style>
       </head>
-      <body className={`${faktum.className} h-full`}>
+      <body className={`${faktum.className} h-full text-white scroll-smooth`}>
         <Navbar />
         {children}
       </body>
