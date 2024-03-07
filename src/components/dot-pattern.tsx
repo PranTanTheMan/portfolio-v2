@@ -28,10 +28,7 @@ export function DotPattern({
   return (
     <svg
       aria-hidden="true"
-      className={cn(
-        "pointer-events-none absolute inset-0 h-full w-full fill-white",
-        className
-      )}
+      className={cn(" absolute inset-0 h-full w-full fill-white", className)}
       {...props}
     >
       <defs>
