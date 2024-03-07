@@ -95,7 +95,7 @@ export default function AboutV2() {
           </div>
           <h1 className="pt-4 text-[30px] lg:text-[50px] tracking-normal leading-tight text-white font-satoshi font-bold">
             Pranith is a Full-Stack Developer {""}
-            <span className="text-white/40">
+            <p className="text-[#666666]">
               currently developing at{" "}
               <a
                 href="https://www.joinperceptify.com"
@@ -114,7 +114,7 @@ export default function AboutV2() {
               >
                 Perceptify.
               </a>
-            </span>
+            </p>
           </h1>
         </BentoGridItem>
         <BentoGridItem className="sm:col-span-1 p-6">
@@ -165,7 +165,7 @@ export default function AboutV2() {
                 <h1 className="font-satoshi font-bold text-3xl text-white/95 text-left mt-12 mb-4 line-clamp-4">
                   {latestActivity.commit.message}
                 </h1>
-                <p className="font-satoshi font-bold text-3xl text-white/35 text-left">
+                <p className="font-satoshi font-bold text-3xl text-[#595959] text-left">
                   @ {latestActivity.commit.author.date},{" "}
                   {latestActivity.commit.author.time}
                 </p>
@@ -188,15 +188,15 @@ export default function AboutV2() {
             </a>
             Otherwise, I specialize in creating Full-Stack web applications
             using{" "}
-            <span className="text-white/40">
+            <p className="text-[#666666]">
               Next.js, Tailwind, Typescript, and Supabase.{" "}
-            </span>
-            <span>
+            </p>
+            <p>
               I always look forward to finding ways on having{" "}
-              <span className="text-white/40">impact</span>,{" "}
-              <span className="text-white/40">fun</span>, and{" "}
-              <span className="text-white/40">learning new things</span>.
-            </span>
+              <p className="text-[#666666]">impact</p>,{" "}
+              <p className="text-[#666666]">fun</p>, and{" "}
+              <p className="text-[#666666]">learning new things</p>.
+            </p>
           </p>
         </BentoGridItem>
       </BentoGrid>
