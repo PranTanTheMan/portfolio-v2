@@ -6,11 +6,21 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  scroll-behavior: smooth;
 }
 
-html {
-  --cursor-color: #ffffff;
-  --cursor-color-outer: #ffffff93;
+&::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+&::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+}
+
+&::-webkit-scrollbar-track {
+  background-color: #000000;
+  border-radius: 0.25rem;
 }
 
 ::selection {
@@ -18,27 +28,6 @@ html {
   color: #000;
 }
 
-@keyframes wave {
-  0% {
-    opacity: 0.5;
-  }
-  20% {
-    opacity: 0.6;
-  }
-  40% {
-    opacity: 0.7;
-  }
-  60% {
-    opacity: 0.8;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0.5;
-  }
-}
-
-.dot-animation {
-  animation: wave 1s ease-in-out infinite alternate;
+#projects {
+  scroll-margin-top: 10rem;
 }
