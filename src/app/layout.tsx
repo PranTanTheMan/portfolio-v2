@@ -57,6 +57,29 @@ export const metadata: Metadata = {
   title: "Pranith Molakalapalli's Portfolio",
   description:
     "Discover the work of Pranith Molakalapalli. His exqusite designs and his passion for technology. He is a full stack developer and a designer. I love biryani",
+  keywords:
+    "Pranith Molakalapalli, Full Stack Developer, Designer, Biryani Lover",
+  openGraph: {
+    type: "website",
+    url: "https://www.prani.tech",
+    title: "Pranith Molakalapalli's Portfolio",
+    description:
+      "Discover the work of Pranith Molakalapalli. His exqusite designs and his passion for technology. He is a full stack developer and a designer. I love biryani",
+    siteName: "Pranith Molakalapalli's Portfolio",
+    images: [
+      {
+        url: "/Pranith.webp",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@prantantheman",
+    title: "Pranith Molakalapalli's Portfolio",
+    description:
+      "Discover the work of Pranith Molakalapalli. His exqusite designs and his passion for technology. He is a full stack developer and a designer. I love biryani",
+    images: "/Pranith.webp",
+  },
 };
 
 export default function RootLayout({
