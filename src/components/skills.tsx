@@ -1,5 +1,4 @@
 import React from "react";
-import { BiLogoPostgresql } from "react-icons/bi";
 
 export default function Skills() {
   return (
@@ -9,7 +8,7 @@ export default function Skills() {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             color="#FFF"
@@ -25,7 +24,7 @@ export default function Skills() {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             color="#FFF"
@@ -42,7 +41,7 @@ export default function Skills() {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             color="#FFF"
@@ -58,7 +57,7 @@ export default function Skills() {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             style={{ color: "#FFF" }}
@@ -73,7 +72,7 @@ export default function Skills() {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             viewBox="0 0 448 512"
             color="#FFF"
             style={{ color: "#FFF" }}
@@ -88,7 +87,7 @@ export default function Skills() {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             viewBox="0 0 24 24"
             style={{ color: "#FFF", transform: "scale(1.2)" }}
             height="33"
@@ -107,7 +106,7 @@ export default function Skills() {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             color="#FFF"
@@ -123,7 +122,7 @@ export default function Skills() {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             role="img"
             viewBox="0 0 24 24"
             color="#FFF"
