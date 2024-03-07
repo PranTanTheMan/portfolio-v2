@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import Navbar from "@/components/navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const satoshi = localFont({
   src: [
@@ -115,6 +116,7 @@ export default function RootLayout({
       <body className={`${faktum.className} h-full text-white scroll-smooth`}>
         <Navbar />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
