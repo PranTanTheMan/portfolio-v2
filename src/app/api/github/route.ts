@@ -8,6 +8,7 @@ export async function GET() {
     headers: {
       Accept: "application/vnd.github.v3+json",
       Authorization: `token ${process.env.GITHUB_TOKEN}`,
+      cache: "no-store",
     },
   };
 
