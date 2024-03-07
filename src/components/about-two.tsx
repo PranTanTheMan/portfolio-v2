@@ -188,15 +188,13 @@ export default function AboutV2() {
             </a>
             Otherwise, I specialize in creating Full-Stack web applications
             using{" "}
-            <p className="text-[#666666]">
+            <span className="text-[#666666]">
               Next.js, Tailwind, Typescript, and Supabase.{" "}
-            </p>
-            <p>
-              I always look forward to finding ways on having{" "}
-              <p className="text-[#666666]">impact</p>,{" "}
-              <p className="text-[#666666]">fun</p>, and{" "}
-              <p className="text-[#666666]">learning new things</p>.
-            </p>
+            </span>
+            I always look forward to finding ways on having{" "}
+            <span className="text-[#666666]">impact</span>,{" "}
+            <span className="text-[#666666]">fun</span>, and{" "}
+            <span className="text-[#666666]">learning new things</span>.
           </p>
         </BentoGridItem>
       </BentoGrid>
