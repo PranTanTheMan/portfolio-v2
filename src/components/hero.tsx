@@ -7,14 +7,15 @@ import details from "@/utils/details.json";
 export default function Hero() {
   return (
     <>
-      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg p-[20rem] md:shadow-2xl">
-        <div className="z-10 flex flex-col whitespace-pre-wrap text-9xl tracking-tight text-white">
+      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg  md:shadow-2xl">
+        <div className="z-10 flex flex-col whitespace-pre-wrap text-[55px] md:text-8xl lg:text-9xl tracking-tight text-white">
           <span>Pranith</span>
           <span>Molakalapalli</span>
           <div
-            className={`font-gopher flex w-full justify-between pt-4 text-5xl tracking-wide`}
+            className={`font-gopher flex  justify-between pt-4 text-3xl md:text-5xl tracking-wide`}
           >
-            {details.detail.map((item: String, i: any) => (
+            {/* @ts-ignore */}
+            {details.detail.map((item: string, i: number) => (
               <span className="font-thin italic" key={i}>
                 {item}
               </span>
