@@ -72,7 +72,7 @@ export default function AboutV2() {
   return (
     <>
       <BentoGrid className="md:mx-auto mx-[1rem] md:auto-rows-auto">
-        <BentoGridItem className="p-6 sm:col-span-2">
+        <BentoGridItem className="p-6 sm:col-span-2 ">
           <div className="flex flex-col justify-start">
             <Image
               src={"/Pranith.webp"}
