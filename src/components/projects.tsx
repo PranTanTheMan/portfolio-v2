@@ -54,6 +54,13 @@ export default function Projects() {
       github: "https://github.com/thegu5/superstream",
       tags: ["Next.js", "CSS", "JavaScript", "GoogleAPI", "Python"],
     },
+    {
+      title: "SwiftDebrief",
+      description: "Debrief Research papers",
+      website: "https://swiftdebrief.prani.tech/",
+      github: "https://github.com/PranTanTheMan/SwiftDebrief",
+      tags: ["Next.js", "Tailwind", "TypeScript", "OCR", "OpenAI", "TTS"],
+    },
   ];
   return (
     <>
