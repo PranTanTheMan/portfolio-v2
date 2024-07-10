@@ -98,21 +98,21 @@ export default function AboutV2() {
             <p className="text-[#666666]">
               currently developing at{" "}
               <a
-                href="https://www.joinperceptify.com"
+                href="https://effinity.ca"
                 onMouseEnter={changeColor} // Change color on hover
                 style={{ color: linkColor, transition: "color 0.5s" }}
                 target="_blank"
                 className="md:block hidden"
               >
-                Perceptify.
+                Effinity.
               </a>
               <a
-                href="https://www.joinperceptify.com"
+                href="https://effinity.ca"
                 style={{ color: "#D7BCED", transition: "color 0.5s" }}
                 target="_blank"
                 className="md:hidden block"
               >
-                Perceptify.
+                Effinity.
               </a>
             </p>
           </h1>

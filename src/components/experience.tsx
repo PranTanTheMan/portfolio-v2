@@ -22,13 +22,13 @@ export default function Experience() {
         "CodeDevils is a student-run organization at ASU that aims to provide a platform for students to learn and grow in the field of technology.",
     },
     {
-      title: "Perceptify",
+      title: "Opal",
       img: "/Group-5.png",
-      href: "https://www.joinperceptify.com",
-      role: "Co-founder & Developer",
+      href: "https://www.learnopal.com",
+      role: "Developer",
       duration: "2023 - Present",
       description:
-        "Data analytics and visualization for Gen z content creators. ",
+        "Versatile AI study tools to help you study faster and more efficient",
     },
     {
       title: "ASU",
