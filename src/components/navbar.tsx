@@ -18,7 +18,7 @@ const GlassNavigation = () => {
         {/* <p className="font-black text-3xl text-white">Pranith</p> */}
         <Image
           className="mr-12 rounded-full "
-          src="/pranith.webp"
+          src="/Pranith.webp"
           width="54"
           height="54"
           alt="Navbar Logo"
